@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Transcriber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Parchments</h3>
+            <div id="thumbnails" class="thumbnails"></div>
+        </aside>
+        <main class="main-content">
+            <div class="tabs">
+                <button class="tab active" data-tab="image">Image</button>
+                <button class="tab" data-tab="chars">Ground Truth Characters</button>
+                <button class="tab" data-tab="docs">Ground Truth Documents</button>
+            </div>
+            <div class="content">
+                <div id="image-tab" class="tab-content active">
+                    <img id="main-image" src="" alt="Parchment">
+                    <button id="download-image" class="download-btn">Download Image</button>
+                </div>
+                <div id="chars-tab" class="tab-content">
+                    <pre id="chars-text"></pre>
+                    <button id="download-chars" class="download-btn">Download Ground Truth Characters</button>
+                </div>
+                <div id="docs-tab" class="tab-content">
+                    <pre id="docs-text"></pre>
+                    <button id="download-docs" class="download-btn">Download Ground Truth Document</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
